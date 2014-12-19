@@ -55,7 +55,6 @@
 -(void) setNewVisitorFirstName:(NSString*)newFirstName
 {
   self.checkingInUser.firstName = newFirstName;
-  NSLog(@"Did set to first name : %@", newFirstName);
 }
 
 -(void) setNewVisitorLastName:(NSString*)newLastName

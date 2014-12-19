@@ -10,7 +10,6 @@
 		7040443EBA32338569396072 /* libPods-Welcome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BF4F8F50C2559C2DB83223 /* libPods-Welcome.a */; };
 		9D95988A1A4360200060704D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9598891A4360200060704D /* main.m */; };
 		9D95988D1A4360200060704D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D95988C1A4360200060704D /* AppDelegate.m */; };
-		9D9598901A4360200060704D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D95988F1A4360200060704D /* ViewController.m */; };
 		9D9598931A4360200060704D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D9598911A4360200060704D /* Main.storyboard */; };
 		9D9598951A4360200060704D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D9598941A4360200060704D /* Images.xcassets */; };
 		9D9598981A4360200060704D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D9598961A4360200060704D /* LaunchScreen.xib */; };
@@ -22,6 +21,8 @@
 		9D9598BE1A438CC20060704D /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9598BD1A438CC20060704D /* Controller.m */; };
 		9D9598C11A4393F70060704D /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9598C01A4393F70060704D /* DataManager.m */; };
 		9DD22BB81A43A7F000E73108 /* AdminViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD22BB71A43A7F000E73108 /* AdminViewController.m */; };
+		9DD4CEDD1A4498B600BAC363 /* CompanyCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD4CEDC1A4498B600BAC363 /* CompanyCityViewController.m */; };
+		9DD4CEE01A4498E000BAC363 /* LabMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD4CEDF1A4498E000BAC363 /* LabMemberViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +43,6 @@
 		9D9598891A4360200060704D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9D95988B1A4360200060704D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9D95988C1A4360200060704D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9D95988E1A4360200060704D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9D95988F1A4360200060704D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9D9598921A4360200060704D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D9598941A4360200060704D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9D9598971A4360200060704D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -64,6 +63,10 @@
 		9D9598C01A4393F70060704D /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataManager.m; path = Files/DataManager.m; sourceTree = "<group>"; };
 		9DD22BB61A43A7F000E73108 /* AdminViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdminViewController.h; path = Files/AdminViewController.h; sourceTree = "<group>"; };
 		9DD22BB71A43A7F000E73108 /* AdminViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdminViewController.m; path = Files/AdminViewController.m; sourceTree = "<group>"; };
+		9DD4CEDB1A4498B600BAC363 /* CompanyCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompanyCityViewController.h; path = Files/CompanyCityViewController.h; sourceTree = "<group>"; };
+		9DD4CEDC1A4498B600BAC363 /* CompanyCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CompanyCityViewController.m; path = Files/CompanyCityViewController.m; sourceTree = "<group>"; };
+		9DD4CEDE1A4498E000BAC363 /* LabMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LabMemberViewController.h; path = Files/LabMemberViewController.h; sourceTree = "<group>"; };
+		9DD4CEDF1A4498E000BAC363 /* LabMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LabMemberViewController.m; path = Files/LabMemberViewController.m; sourceTree = "<group>"; };
 		C28D533B923643EC9370C9F8 /* Pods-Welcome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Welcome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Welcome/Pods-Welcome.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,8 +131,6 @@
 			children = (
 				9D95988B1A4360200060704D /* AppDelegate.h */,
 				9D95988C1A4360200060704D /* AppDelegate.m */,
-				9D95988E1A4360200060704D /* ViewController.h */,
-				9D95988F1A4360200060704D /* ViewController.m */,
 				9D9598B81A438C000060704D /* Models */,
 				9D9598B71A438BEF0060704D /* Controllers */,
 				9D9598B61A4386AC0060704D /* Views */,
@@ -176,6 +177,10 @@
 				9D9598B11A4386380060704D /* NameViewController.m */,
 				9D9598B31A4386A00060704D /* CompanyViewController.h */,
 				9D9598B41A4386A00060704D /* CompanyViewController.m */,
+				9DD4CEDB1A4498B600BAC363 /* CompanyCityViewController.h */,
+				9DD4CEDC1A4498B600BAC363 /* CompanyCityViewController.m */,
+				9DD4CEDE1A4498E000BAC363 /* LabMemberViewController.h */,
+				9DD4CEDF1A4498E000BAC363 /* LabMemberViewController.m */,
 				9DD22BB61A43A7F000E73108 /* AdminViewController.h */,
 				9DD22BB71A43A7F000E73108 /* AdminViewController.m */,
 			);
@@ -338,11 +343,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D9598B51A4386A00060704D /* CompanyViewController.m in Sources */,
-				9D9598901A4360200060704D /* ViewController.m in Sources */,
 				9DD22BB81A43A7F000E73108 /* AdminViewController.m in Sources */,
 				9D9598BB1A438C1B0060704D /* Visitor.m in Sources */,
 				9D9598BE1A438CC20060704D /* Controller.m in Sources */,
 				9D9598AF1A4362D30060704D /* WelcomeViewController.m in Sources */,
+				9DD4CEDD1A4498B600BAC363 /* CompanyCityViewController.m in Sources */,
+				9DD4CEE01A4498E000BAC363 /* LabMemberViewController.m in Sources */,
 				9D9598B21A4386380060704D /* NameViewController.m in Sources */,
 				9D95988D1A4360200060704D /* AppDelegate.m in Sources */,
 				9D9598C11A4393F70060704D /* DataManager.m in Sources */,

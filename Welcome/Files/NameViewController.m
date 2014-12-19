@@ -22,6 +22,7 @@
   }
    */
  // NSLog(@"All visitors : %@", );
+  [[Controller sharedInstance] startCheckingInNewVisitor];
 }
 
 - (IBAction)next:(id)sender

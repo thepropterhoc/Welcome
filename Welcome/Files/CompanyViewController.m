@@ -7,7 +7,27 @@
 //
 
 #import "CompanyViewController.h"
+#import "Controller.h"
+
+@interface CompanyViewController ()
+
+@property (strong, nonatomic) IBOutlet UITextField *companyNameField;
+
+@end
 
 @implementation CompanyViewController
+
+- (IBAction)next:(id)sender
+{
+  [[Controller sharedInstance] setNewVisitorCompanyName:self.companyNameField.text];
+  [self performSegueWithIdentifier:@"goToCompanyCity" sender:self];
+}
+
+- (IBAction)skip:(id)sender
+{
+  [[Controller sharedInstance] setNewVisitorCompanyCity:@"N/A"];
+  [[Controller sharedInstance] setNewVisitorCompanyName:@"N/A"];
+  [self performSegueWithIdentifier:@"goToLabMember" sender:self];
+}
 
 @end
