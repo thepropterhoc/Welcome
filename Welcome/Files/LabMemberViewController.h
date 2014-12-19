@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
 
-@interface LabMemberViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+@interface LabMemberViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate, MFMessageComposeViewControllerDelegate>
 
 @end

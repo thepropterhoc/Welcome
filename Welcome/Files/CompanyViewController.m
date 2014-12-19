@@ -30,4 +30,10 @@
   [self performSegueWithIdentifier:@"goToLabMember" sender:self];
 }
 
+- (IBAction)cancel:(id)sender
+{
+  [[Controller sharedInstance] clearNewVisitor];
+  [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
 @end

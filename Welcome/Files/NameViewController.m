@@ -31,4 +31,12 @@
   [[Controller sharedInstance] setNewVisitorLastName:self.lastNameField.text];
   [self performSegueWithIdentifier:@"pushToCompany" sender:self];
 }
+
+- (IBAction)cancel:(id)sender
+{
+  [[Controller sharedInstance] clearNewVisitor];
+  [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+
 @end

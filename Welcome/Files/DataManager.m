@@ -70,6 +70,22 @@
   return retval;
 }
 
+-(void) clearAllVisitors
+{
+  YapDatabaseConnection *connection = [self.database newConnection];
+  
+  __block NSArray *keys = nil;
+  [connection readWithBlock:^(YapDatabaseReadTransaction *transaction) {
+    keys = [transaction allKeysInCollection:@"visitors"];
+  }];
+  
+  [connection readWriteWithBlock:^(YapDatabaseReadWriteTransaction *transaction) {
+    for(NSString *key in keys){
+      [transaction setObject:nil forKey:key inCollection:@"visitors"];
+    }
+  }];
+}
+
 /*
  // Create and/or Open the database file
  YapDatabase *database = [[YapDatabase alloc] initWithPath:databasePath];

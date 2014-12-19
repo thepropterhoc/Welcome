@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E0C99710-D5CD-4ED9-BF54-8BE04309A6DD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Welcome</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2AD2FF86F107C70C155D7FF671C279E28FA07607</key>
+		<string>https://github.com/thepropterhoc/Welcome.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Welcome.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2AD2FF86F107C70C155D7FF671C279E28FA07607</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/thepropterhoc/Welcome.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2AD2FF86F107C70C155D7FF671C279E28FA07607</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2AD2FF86F107C70C155D7FF671C279E28FA07607</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Welcome</string>
+		</dict>
+	</array>
+</dict>
+</plist>

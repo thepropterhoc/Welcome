@@ -16,5 +16,6 @@
 -(void) createNewVisitor:(Visitor*)v;
 -(void) updateVisitor:(Visitor*)v;
 -(NSArray*) readAllVisitors;
+-(void) clearAllVisitors;
 
 @end

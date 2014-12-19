@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MessageUI/MessageUI.h>
+#import "Visitor.h"
 
 @interface Controller : NSObject
 
@@ -16,10 +18,12 @@
 -(void) setNewVisitorLastName:(NSString*)newLastName;
 -(void) setNewVisitorCompanyName:(NSString*)newCompanyName;
 -(void) setNewVisitorCompanyCity:(NSString*)newCompanyCity;
+-(void) checkNewVisitorIn;
 
 -(void) createDummy;
--(void) saveNewVisitor;
+-(Visitor*) saveNewVisitor;
 -(void) clearNewVisitor;
+-(void) clearAllVisitors;
 
 -(NSArray*) allVisitors;
 

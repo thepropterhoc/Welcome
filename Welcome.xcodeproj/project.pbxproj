@@ -23,6 +23,7 @@
 		9DD22BB81A43A7F000E73108 /* AdminViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD22BB71A43A7F000E73108 /* AdminViewController.m */; };
 		9DD4CEDD1A4498B600BAC363 /* CompanyCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD4CEDC1A4498B600BAC363 /* CompanyCityViewController.m */; };
 		9DD4CEE01A4498E000BAC363 /* LabMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD4CEDF1A4498E000BAC363 /* LabMemberViewController.m */; };
+		9DD4CEE21A44A76500BAC363 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD4CEE11A44A76500BAC363 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		9DD4CEDC1A4498B600BAC363 /* CompanyCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CompanyCityViewController.m; path = Files/CompanyCityViewController.m; sourceTree = "<group>"; };
 		9DD4CEDE1A4498E000BAC363 /* LabMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LabMemberViewController.h; path = Files/LabMemberViewController.h; sourceTree = "<group>"; };
 		9DD4CEDF1A4498E000BAC363 /* LabMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LabMemberViewController.m; path = Files/LabMemberViewController.m; sourceTree = "<group>"; };
+		9DD4CEE11A44A76500BAC363 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		C28D533B923643EC9370C9F8 /* Pods-Welcome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Welcome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Welcome/Pods-Welcome.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DD4CEE21A44A76500BAC363 /* MessageUI.framework in Frameworks */,
 				7040443EBA32338569396072 /* libPods-Welcome.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +104,7 @@
 		9376DFA0B50FF70B4BE344BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9DD4CEE11A44A76500BAC363 /* MessageUI.framework */,
 				14BF4F8F50C2559C2DB83223 /* libPods-Welcome.a */,
 			);
 			name = Frameworks;

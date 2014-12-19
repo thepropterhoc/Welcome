@@ -29,7 +29,10 @@
 
 -(void) checkInNow
 {
-  self.visitDates = [self.visitDates arrayByAddingObject:[NSDate date]];
+  NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
+  [formatter setTimeZone:[NSTimeZone timeZoneWithName:@"CST"]];
+  [formatter setDateFormat:@"yyyy.MM.dd 'at' HH:mm:ss zzz"];
+  self.visitDates = [self.visitDates arrayByAddingObject:[formatter stringFromDate:[NSDate date]]];
 }
 
 -(NSDictionary *) dictionaryRepresentation

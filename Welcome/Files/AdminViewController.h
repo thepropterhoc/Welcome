@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CSV/CSV.h>
+#import <CSV/CSVSerializer.h>
+#import "Controller.h"
+#import <MessageUI/MessageUI.h>
 
-@interface AdminViewController : UIViewController
+@interface AdminViewController : UIViewController <MFMailComposeViewControllerDelegate>
 
 @property (strong, nonatomic) UIViewController *delegate;
 - (IBAction)back:(id)sender;

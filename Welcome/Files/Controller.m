@@ -7,7 +7,6 @@
 //
 
 #import "Controller.h"
-#import "Visitor.h"
 #import "DataManager.h"
 
 @interface Controller ()
@@ -72,14 +71,26 @@
   self.checkingInUser.companyCity = newCompanyCity;
 }
 
+-(void) checkNewVisitorIn
+{
+  [self.checkingInUser checkInNow];
+}
+
 -(void) clearNewVisitor
 {
   self.checkingInUser = nil;
 }
 
--(void) saveNewVisitor
+-(Visitor*) saveNewVisitor
 {
   [[DataManager sharedInstance] createNewVisitor:self.checkingInUser];
+  return self.checkingInUser;
 }
+
+-(void) clearAllVisitors
+{
+  [[DataManager sharedInstance] clearAllVisitors];
+}
+
 
 @end
