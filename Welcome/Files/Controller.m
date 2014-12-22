@@ -7,7 +7,6 @@
 //
 
 #import "Controller.h"
-#import "DataManager.h"
 
 @interface Controller ()
 
@@ -76,9 +75,30 @@
   [self.checkingInUser checkInNow];
 }
 
+-(void) checkReturningVisitorIn
+{
+  [self.checkingInUser checkInNow];
+}
+
+-(void) setCurrentVisitorCheckingIn:(Visitor*)v
+{
+  self.checkingInUser = v;
+}
+
 -(void) clearNewVisitor
 {
   self.checkingInUser = nil;
+}
+
+-(void) clearReturningVisitor
+{
+  [self clearNewVisitor];
+}
+
+-(Visitor*) updateReturningVisitor
+{
+  [[DataManager sharedInstance] updateVisitor:self.checkingInUser];
+  return self.checkingInUser;
 }
 
 -(Visitor*) saveNewVisitor
@@ -90,6 +110,16 @@
 -(void) clearAllVisitors
 {
   [[DataManager sharedInstance] clearAllVisitors];
+}
+
+-(void) printBadgeForVisitor:(Visitor*)v
+{
+  
+}
+
+-(NSArray*) allLabMembers
+{
+  return [[DataManager sharedInstance] readAllLabMembers];
 }
 
 

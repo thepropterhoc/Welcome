@@ -8,14 +8,21 @@
 
 #import "DataManager.h"
 
+#pragma mark - Global Variable Declarations
+
 @interface DataManager ()
 
 @property (strong, nonatomic) YapDatabase *database;
 @property (strong, nonatomic) YapDatabaseConnection *connection;
 
+@property (strong, nonatomic) NSString *visitorCollection;
+@property (strong, nonatomic) NSString *labMemberCollection;
+
 @end
 
 @implementation DataManager
+
+#pragma mark - Static Initialization
 
 +(instancetype) sharedInstance
 {
@@ -28,16 +35,20 @@
     NSString *documentsDirectory = [paths objectAtIndex:0];
     NSString *path = [NSString stringWithFormat:@"%@/database.db", documentsDirectory];
     sharedInstance.database = [[YapDatabase alloc] initWithPath:path];
+    sharedInstance.visitorCollection = @"visitors";
+    sharedInstance.labMemberCollection = @"labMembers";
   });
   return sharedInstance;
 }
+
+#pragma mark - Visitor Methods
 
 -(void) createNewVisitor:(Visitor*)v
 {
   YapDatabaseConnection *connection = [self.database newConnection];
   
   [connection readWriteWithBlock:^(YapDatabaseReadWriteTransaction *transaction) {
-    [transaction setObject:[v dictionaryRepresentation] forKey:v.eyed inCollection:@"visitors"];
+    [transaction setObject:[v dictionaryRepresentation] forKey:v.eyed inCollection:self.visitorCollection];
   }];
 }
 
@@ -46,7 +57,7 @@
   YapDatabaseConnection *connection = [self.database newConnection];
   
   [connection readWriteWithBlock:^(YapDatabaseReadWriteTransaction *transaction) {
-    [transaction setObject:[v dictionaryRepresentation] forKey:v.eyed inCollection:@"visitors"];
+    [transaction setObject:[v dictionaryRepresentation] forKey:v.eyed inCollection:self.visitorCollection];
   }];
 }
 
@@ -62,7 +73,7 @@
   
   [connection readWithBlock:^(YapDatabaseReadTransaction *transaction) {
     for(NSString *key in keys){
-      Visitor *v = [Visitor visitorFromDictionary:[transaction objectForKey:key inCollection:@"visitors"]];
+      Visitor *v = [Visitor visitorFromDictionary:[transaction objectForKey:key inCollection:self.visitorCollection]];
       [retval addObject:v];
     }
   }];
@@ -76,14 +87,54 @@
   
   __block NSArray *keys = nil;
   [connection readWithBlock:^(YapDatabaseReadTransaction *transaction) {
-    keys = [transaction allKeysInCollection:@"visitors"];
+    keys = [transaction allKeysInCollection:self.visitorCollection];
   }];
   
   [connection readWriteWithBlock:^(YapDatabaseReadWriteTransaction *transaction) {
     for(NSString *key in keys){
-      [transaction setObject:nil forKey:key inCollection:@"visitors"];
+      [transaction setObject:nil forKey:key inCollection:self.visitorCollection];
     }
   }];
+}
+
+#pragma mark - Lab Member Methods
+
+-(void) createNewLabMember:(LabMember*)l
+{
+  YapDatabaseConnection *connection = [self.database newConnection];
+  
+  [connection readWriteWithBlock:^(YapDatabaseReadWriteTransaction *transaction) {
+    [transaction setObject:[l dictionaryRepresentation] forKey:l.eyed inCollection:self.labMemberCollection];
+  }];
+}
+
+-(void) updateLabMember:(LabMember*)l
+{
+  YapDatabaseConnection *connection = [self.database newConnection];
+  
+  [connection readWriteWithBlock:^(YapDatabaseReadWriteTransaction *transaction) {
+    [transaction setObject:[l dictionaryRepresentation] forKey:l.eyed inCollection:self.labMemberCollection];
+  }];
+}
+
+-(NSArray*) readAllLabMembers
+{
+  YapDatabaseConnection *connection = [self.database newConnection];
+  
+  NSMutableArray *retval = [[NSMutableArray alloc] init];
+  __block NSArray *keys = nil;
+  [connection readWithBlock:^(YapDatabaseReadTransaction *transaction) {
+    keys = [transaction allKeysInCollection:self.labMemberCollection];
+  }];
+  
+  [connection readWithBlock:^(YapDatabaseReadTransaction *transaction) {
+    for(NSString *key in keys){
+      LabMember *l = [LabMember labMemberFromDictionary:[transaction objectForKey:key inCollection:self.labMemberCollection]];
+      [retval addObject:l];
+    }
+  }];
+  
+  return retval;
 }
 
 /*

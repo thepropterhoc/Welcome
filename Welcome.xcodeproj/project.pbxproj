@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7040443EBA32338569396072 /* libPods-Welcome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BF4F8F50C2559C2DB83223 /* libPods-Welcome.a */; };
+		9D7F66891A4884D400FA80FD /* Printer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F66881A4884D400FA80FD /* Printer.m */; };
+		9D7F668C1A4897FB00FA80FD /* LabMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F668B1A4897FB00FA80FD /* LabMember.m */; };
+		9D7F668F1A489CB600FA80FD /* SeenBeforeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F668E1A489CB600FA80FD /* SeenBeforeViewController.m */; };
+		9D7F66921A48A5B300FA80FD /* ConfirmInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F66911A48A5B300FA80FD /* ConfirmInfoViewController.m */; };
 		9D95988A1A4360200060704D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9598891A4360200060704D /* main.m */; };
 		9D95988D1A4360200060704D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D95988C1A4360200060704D /* AppDelegate.m */; };
 		9D9598931A4360200060704D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D9598911A4360200060704D /* Main.storyboard */; };
@@ -39,6 +43,14 @@
 /* Begin PBXFileReference section */
 		14BF4F8F50C2559C2DB83223 /* libPods-Welcome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Welcome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FE2DDE397AA356EB7B8B5A /* Pods-Welcome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Welcome.release.xcconfig"; path = "Pods/Target Support Files/Pods-Welcome/Pods-Welcome.release.xcconfig"; sourceTree = "<group>"; };
+		9D7F66871A4884D400FA80FD /* Printer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Printer.h; path = Files/Printer.h; sourceTree = "<group>"; };
+		9D7F66881A4884D400FA80FD /* Printer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Printer.m; path = Files/Printer.m; sourceTree = "<group>"; };
+		9D7F668A1A4897FB00FA80FD /* LabMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LabMember.h; path = Files/LabMember.h; sourceTree = "<group>"; };
+		9D7F668B1A4897FB00FA80FD /* LabMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LabMember.m; path = Files/LabMember.m; sourceTree = "<group>"; };
+		9D7F668D1A489CB600FA80FD /* SeenBeforeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeenBeforeViewController.h; path = Files/SeenBeforeViewController.h; sourceTree = "<group>"; };
+		9D7F668E1A489CB600FA80FD /* SeenBeforeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeenBeforeViewController.m; path = Files/SeenBeforeViewController.m; sourceTree = "<group>"; };
+		9D7F66901A48A5B300FA80FD /* ConfirmInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfirmInfoViewController.h; path = Files/ConfirmInfoViewController.h; sourceTree = "<group>"; };
+		9D7F66911A48A5B300FA80FD /* ConfirmInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConfirmInfoViewController.m; path = Files/ConfirmInfoViewController.m; sourceTree = "<group>"; };
 		9D9598841A4360200060704D /* Welcome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Welcome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D9598881A4360200060704D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D9598891A4360200060704D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -185,6 +197,10 @@
 				9DD4CEDC1A4498B600BAC363 /* CompanyCityViewController.m */,
 				9DD4CEDE1A4498E000BAC363 /* LabMemberViewController.h */,
 				9DD4CEDF1A4498E000BAC363 /* LabMemberViewController.m */,
+				9D7F668D1A489CB600FA80FD /* SeenBeforeViewController.h */,
+				9D7F668E1A489CB600FA80FD /* SeenBeforeViewController.m */,
+				9D7F66901A48A5B300FA80FD /* ConfirmInfoViewController.h */,
+				9D7F66911A48A5B300FA80FD /* ConfirmInfoViewController.m */,
 				9DD22BB61A43A7F000E73108 /* AdminViewController.h */,
 				9DD22BB71A43A7F000E73108 /* AdminViewController.m */,
 			);
@@ -198,6 +214,8 @@
 				9D9598BD1A438CC20060704D /* Controller.m */,
 				9D9598BF1A4393F70060704D /* DataManager.h */,
 				9D9598C01A4393F70060704D /* DataManager.m */,
+				9D7F66871A4884D400FA80FD /* Printer.h */,
+				9D7F66881A4884D400FA80FD /* Printer.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -207,6 +225,8 @@
 			children = (
 				9D9598B91A438C1B0060704D /* Visitor.h */,
 				9D9598BA1A438C1B0060704D /* Visitor.m */,
+				9D7F668A1A4897FB00FA80FD /* LabMember.h */,
+				9D7F668B1A4897FB00FA80FD /* LabMember.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -346,10 +366,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D7F66891A4884D400FA80FD /* Printer.m in Sources */,
+				9D7F668C1A4897FB00FA80FD /* LabMember.m in Sources */,
 				9D9598B51A4386A00060704D /* CompanyViewController.m in Sources */,
 				9DD22BB81A43A7F000E73108 /* AdminViewController.m in Sources */,
 				9D9598BB1A438C1B0060704D /* Visitor.m in Sources */,
 				9D9598BE1A438CC20060704D /* Controller.m in Sources */,
+				9D7F66921A48A5B300FA80FD /* ConfirmInfoViewController.m in Sources */,
+				9D7F668F1A489CB600FA80FD /* SeenBeforeViewController.m in Sources */,
 				9D9598AF1A4362D30060704D /* WelcomeViewController.m in Sources */,
 				9DD4CEDD1A4498B600BAC363 /* CompanyCityViewController.m in Sources */,
 				9DD4CEE01A4498E000BAC363 /* LabMemberViewController.m in Sources */,

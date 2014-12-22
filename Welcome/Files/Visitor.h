@@ -19,6 +19,8 @@
 
 +(instancetype)visitorFromDictionary:(NSDictionary*)d;
 -(NSDictionary *) dictionaryRepresentation;
+-(NSString*) descriptionString;
+
 -(void) checkInNow;
 
 @end

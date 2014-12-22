@@ -48,6 +48,11 @@
   
   return d;
 }
+
+-(NSString*) descriptionString
+{
+  return [NSString stringWithFormat:@"%@, %@ - %@ of %@", self.firstName, self.lastName, self.companyName, self.companyCity];
+}
     
     /*
      @property (strong, nonatomic) NSString *firstName;
