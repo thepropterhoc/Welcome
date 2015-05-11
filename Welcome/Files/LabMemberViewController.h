@@ -11,4 +11,6 @@
 
 @interface LabMemberViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate, MFMessageComposeViewControllerDelegate>
 
+@property BOOL returning;
+
 @end

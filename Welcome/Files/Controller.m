@@ -70,6 +70,16 @@
   self.checkingInUser.companyCity = newCompanyCity;
 }
 
+-(void) setNewVisitorCell:(NSString *)cell
+{
+  self.checkingInUser.cell = cell;
+}
+
+-(void) setnewVisitorEmail:(NSString *)email
+{
+  self.checkingInUser.email = email;
+}
+
 -(void) checkNewVisitorIn
 {
   [self.checkingInUser checkInNow];
@@ -110,6 +120,11 @@
 -(void) clearAllVisitors
 {
   [[DataManager sharedInstance] clearAllVisitors];
+}
+
+-(Visitor*) currentVisitor
+{
+  return self.checkingInUser;
 }
 
 -(void) printBadgeForVisitor:(Visitor*)v

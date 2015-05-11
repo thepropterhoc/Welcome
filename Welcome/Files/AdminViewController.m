@@ -7,6 +7,7 @@
 //
 
 #import "AdminViewController.h"
+#import "EditLabMemberViewController.h"
 
 @implementation AdminViewController
 
@@ -53,4 +54,12 @@
   [[Controller sharedInstance] clearAllVisitors];
   [[[UIAlertView alloc] initWithTitle:@"Success" message:[NSString stringWithFormat:@"Database cleared"] delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil] show];
 }
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+  if([[segue identifier] isEqualToString:@"goToEdit"]){
+    ((EditLabMemberViewController*) [segue destinationViewController]).delegate = self;
+  }
+}
+
 @end

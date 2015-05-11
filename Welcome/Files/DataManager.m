@@ -137,6 +137,16 @@
   return retval;
 }
 
+-(void) deleteLabMember:(LabMember *)l
+{
+  
+  YapDatabaseConnection *connection = [self.database newConnection];
+  
+  [connection readWriteWithBlock:^(YapDatabaseReadWriteTransaction *transaction) {
+      [transaction setObject:nil forKey:l.eyed inCollection:self.labMemberCollection];
+  }];
+}
+
 /*
  // Create and/or Open the database file
  YapDatabase *database = [[YapDatabase alloc] initWithPath:databasePath];

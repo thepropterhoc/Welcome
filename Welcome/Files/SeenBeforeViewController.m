@@ -71,6 +71,10 @@
     }
   }
   
+  if(self.returnedVisitors.count > 0){
+    [self.visitorPicker selectRow:0 inComponent:0 animated:YES];
+    self.selectedPickerIndex = 0;
+  }
   [self.visitorPicker reloadAllComponents];
 }
 

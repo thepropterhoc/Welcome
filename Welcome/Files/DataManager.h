@@ -23,6 +23,7 @@
 
 -(void) createNewLabMember:(LabMember*)l;
 -(void) updateLabMember:(LabMember*)l;
+-(void) deleteLabMember:(LabMember*)l;
 -(NSArray*) readAllLabMembers;
 
 @end

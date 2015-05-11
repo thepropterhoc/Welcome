@@ -24,27 +24,35 @@
 {
   [self.memberPicker setDelegate:self];
   [self.memberPicker setDataSource:self];
-  //self.members = @[@"Dirk Spiers", @"Bryan Schultz", @"Shelby Vanhooser"];
-  //self.memberNumbers = @[@"14054642200", @"14052136218", @"15805487494"];
   self.members = [[Controller sharedInstance] allLabMembers];
 }
 
 - (IBAction)checkIn:(id)sender
 {
   [[Controller sharedInstance] checkNewVisitorIn];
-  Visitor *v = [[Controller sharedInstance] saveNewVisitor];
-  //[[Controller sharedInstance] notifyLabMemberOfCurrentVisitorArrivalWithContactNumber:];
-  
+  Visitor *v;
+  if(!self.returning){
+    v = [[Controller sharedInstance] saveNewVisitor];
+  } else {
+    v = [[Controller sharedInstance] updateReturningVisitor];
+  }
+
   MFMessageComposeViewController *message = [[MFMessageComposeViewController alloc] init];
   [message setMessageComposeDelegate:self];
   message.title = [NSString stringWithFormat:@"Notify %@ of your arrival", ((LabMember*) self.members[self.selectedIndex]).firstName];
   message.recipients = @[((LabMember*) self.members[self.selectedIndex]).contactNumber];
   message.subject = [NSString stringWithFormat:@"%@ %@ has arrived", v.firstName, v.lastName];
   message.body = [NSString stringWithFormat:@"%@, \n\n%@ %@ from %@ has arrived to see you.  \n\nCheers,\n\nThe Welcome App", ((LabMember*) self.members[self.selectedIndex]).firstName, v.firstName, v.lastName, v.companyName];
-  
-  [self presentViewController:message animated:YES completion:^{
-    [[[UIAlertView alloc] initWithTitle:@"Notify" message:[NSString stringWithFormat:@"Tap send to notify %@ of your arrival", ((LabMember *) self.members[self.selectedIndex]).firstName] delegate:nil cancelButtonTitle:@"Got it" otherButtonTitles:nil] show];
-  }];
+    if(message){
+    [self presentViewController:message animated:YES completion:^{
+      [[[UIAlertView alloc] initWithTitle:@"Notify" message:[NSString stringWithFormat:@"Tap send to notify %@ of your arrival", ((LabMember *) self.members[self.selectedIndex]).firstName] delegate:nil cancelButtonTitle:@"Got it" otherButtonTitles:nil] show];
+    }];
+    } else {
+      [self dismissViewControllerAnimated:YES completion:^{
+        [self.navigationController popToRootViewControllerAnimated:YES];
+        [[[UIAlertView alloc] initWithTitle:@"Test Success" message:@"You're debugging" delegate:nil cancelButtonTitle:@"Awesome" otherButtonTitles:nil] show];
+      }];
+    }
 }
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component

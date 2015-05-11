@@ -23,6 +23,8 @@
 -(void) setNewVisitorLastName:(NSString*)newLastName;
 -(void) setNewVisitorCompanyName:(NSString*)newCompanyName;
 -(void) setNewVisitorCompanyCity:(NSString*)newCompanyCity;
+-(void) setNewVisitorCell:(NSString*)cell;
+-(void) setnewVisitorEmail:(NSString*)email;
 -(void) checkNewVisitorIn;
 
 -(void) setCurrentVisitorCheckingIn:(Visitor*)v;
@@ -33,6 +35,9 @@
 -(void) clearNewVisitor;
 -(void) clearAllVisitors;
 -(NSArray*) allVisitors;
+-(Visitor*) updateReturningVisitor;
+
+-(Visitor*) currentVisitor;
 
 -(NSArray*) allLabMembers;
 

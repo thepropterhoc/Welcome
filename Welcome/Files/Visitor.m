@@ -45,7 +45,8 @@
   d[@"companyCity"] = self.companyCity;
   d[@"visitDates"] = self.visitDates;
   d[@"eyed"] = self.eyed;
-  
+  d[@"cell"] = self.cell;
+  d[@"email"] = self.email;
   return d;
 }
 

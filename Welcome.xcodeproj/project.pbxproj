@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		7040443EBA32338569396072 /* libPods-Welcome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BF4F8F50C2559C2DB83223 /* libPods-Welcome.a */; };
+		9D34D6A31AB4EEC500311E48 /* CellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D34D6A21AB4EEC500311E48 /* CellViewController.m */; };
+		9D34D6A61AB4F22800311E48 /* EmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D34D6A51AB4F22800311E48 /* EmailViewController.m */; };
 		9D7F66891A4884D400FA80FD /* Printer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F66881A4884D400FA80FD /* Printer.m */; };
 		9D7F668C1A4897FB00FA80FD /* LabMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F668B1A4897FB00FA80FD /* LabMember.m */; };
 		9D7F668F1A489CB600FA80FD /* SeenBeforeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F668E1A489CB600FA80FD /* SeenBeforeViewController.m */; };
 		9D7F66921A48A5B300FA80FD /* ConfirmInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F66911A48A5B300FA80FD /* ConfirmInfoViewController.m */; };
+		9D883E8D1A5D1E8100C4B3B3 /* EditLabMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D883E8C1A5D1E8100C4B3B3 /* EditLabMemberViewController.m */; };
 		9D95988A1A4360200060704D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9598891A4360200060704D /* main.m */; };
 		9D95988D1A4360200060704D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D95988C1A4360200060704D /* AppDelegate.m */; };
 		9D9598931A4360200060704D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D9598911A4360200060704D /* Main.storyboard */; };
@@ -43,6 +46,10 @@
 /* Begin PBXFileReference section */
 		14BF4F8F50C2559C2DB83223 /* libPods-Welcome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Welcome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FE2DDE397AA356EB7B8B5A /* Pods-Welcome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Welcome.release.xcconfig"; path = "Pods/Target Support Files/Pods-Welcome/Pods-Welcome.release.xcconfig"; sourceTree = "<group>"; };
+		9D34D6A11AB4EEC500311E48 /* CellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CellViewController.h; path = Files/CellViewController.h; sourceTree = "<group>"; };
+		9D34D6A21AB4EEC500311E48 /* CellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CellViewController.m; path = Files/CellViewController.m; sourceTree = "<group>"; };
+		9D34D6A41AB4F22800311E48 /* EmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EmailViewController.h; path = Files/EmailViewController.h; sourceTree = "<group>"; };
+		9D34D6A51AB4F22800311E48 /* EmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EmailViewController.m; path = Files/EmailViewController.m; sourceTree = "<group>"; };
 		9D7F66871A4884D400FA80FD /* Printer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Printer.h; path = Files/Printer.h; sourceTree = "<group>"; };
 		9D7F66881A4884D400FA80FD /* Printer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Printer.m; path = Files/Printer.m; sourceTree = "<group>"; };
 		9D7F668A1A4897FB00FA80FD /* LabMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LabMember.h; path = Files/LabMember.h; sourceTree = "<group>"; };
@@ -51,6 +58,8 @@
 		9D7F668E1A489CB600FA80FD /* SeenBeforeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeenBeforeViewController.m; path = Files/SeenBeforeViewController.m; sourceTree = "<group>"; };
 		9D7F66901A48A5B300FA80FD /* ConfirmInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfirmInfoViewController.h; path = Files/ConfirmInfoViewController.h; sourceTree = "<group>"; };
 		9D7F66911A48A5B300FA80FD /* ConfirmInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConfirmInfoViewController.m; path = Files/ConfirmInfoViewController.m; sourceTree = "<group>"; };
+		9D883E8B1A5D1E8100C4B3B3 /* EditLabMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditLabMemberViewController.h; path = Files/EditLabMemberViewController.h; sourceTree = "<group>"; };
+		9D883E8C1A5D1E8100C4B3B3 /* EditLabMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditLabMemberViewController.m; path = Files/EditLabMemberViewController.m; sourceTree = "<group>"; };
 		9D9598841A4360200060704D /* Welcome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Welcome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D9598881A4360200060704D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D9598891A4360200060704D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -201,8 +210,14 @@
 				9D7F668E1A489CB600FA80FD /* SeenBeforeViewController.m */,
 				9D7F66901A48A5B300FA80FD /* ConfirmInfoViewController.h */,
 				9D7F66911A48A5B300FA80FD /* ConfirmInfoViewController.m */,
+				9D34D6A11AB4EEC500311E48 /* CellViewController.h */,
+				9D34D6A21AB4EEC500311E48 /* CellViewController.m */,
+				9D34D6A41AB4F22800311E48 /* EmailViewController.h */,
+				9D34D6A51AB4F22800311E48 /* EmailViewController.m */,
 				9DD22BB61A43A7F000E73108 /* AdminViewController.h */,
 				9DD22BB71A43A7F000E73108 /* AdminViewController.m */,
+				9D883E8B1A5D1E8100C4B3B3 /* EditLabMemberViewController.h */,
+				9D883E8C1A5D1E8100C4B3B3 /* EditLabMemberViewController.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -285,6 +300,7 @@
 					};
 					9D95989C1A4360200060704D = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = HT8X5T7256;
 						TestTargetID = 9D9598831A4360200060704D;
 					};
 				};
@@ -367,9 +383,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D7F66891A4884D400FA80FD /* Printer.m in Sources */,
+				9D34D6A31AB4EEC500311E48 /* CellViewController.m in Sources */,
 				9D7F668C1A4897FB00FA80FD /* LabMember.m in Sources */,
 				9D9598B51A4386A00060704D /* CompanyViewController.m in Sources */,
 				9DD22BB81A43A7F000E73108 /* AdminViewController.m in Sources */,
+				9D883E8D1A5D1E8100C4B3B3 /* EditLabMemberViewController.m in Sources */,
 				9D9598BB1A438C1B0060704D /* Visitor.m in Sources */,
 				9D9598BE1A438CC20060704D /* Controller.m in Sources */,
 				9D7F66921A48A5B300FA80FD /* ConfirmInfoViewController.m in Sources */,
@@ -379,6 +397,7 @@
 				9DD4CEE01A4498E000BAC363 /* LabMemberViewController.m in Sources */,
 				9D9598B21A4386380060704D /* NameViewController.m in Sources */,
 				9D95988D1A4360200060704D /* AppDelegate.m in Sources */,
+				9D34D6A61AB4F22800311E48 /* EmailViewController.m in Sources */,
 				9D9598C11A4393F70060704D /* DataManager.m in Sources */,
 				9D95988A1A4360200060704D /* main.m in Sources */,
 			);
@@ -439,7 +458,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Integrated Applications L.L.C. (HT8X5T7256)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Integrated Applications L.L.C. (HT8X5T7256)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -459,6 +479,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "309ba79d-037f-402c-a59e-bc2630c2df54";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -481,7 +502,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Integrated Applications L.L.C. (HT8X5T7256)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Integrated Applications L.L.C. (HT8X5T7256)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -494,6 +516,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "309ba79d-037f-402c-a59e-bc2630c2df54";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -526,6 +549,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -537,6 +562,7 @@
 				INFOPLIST_FILE = WelcomeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Welcome.app/Welcome";
 			};
 			name = Debug;
@@ -545,6 +571,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -552,6 +580,7 @@
 				INFOPLIST_FILE = WelcomeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Welcome.app/Welcome";
 			};
 			name = Release;

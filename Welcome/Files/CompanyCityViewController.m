@@ -29,4 +29,11 @@
   [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+  if([[segue identifier] isEqualToString:@"goToLabMember"]){
+    ((LabMemberViewController*) [segue destinationViewController]).returning = NO;
+  }
+}
+
 @end

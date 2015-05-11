@@ -14,6 +14,8 @@
 @property (strong, nonatomic) NSString *lastName;
 @property (strong, nonatomic) NSString *companyName;
 @property (strong, nonatomic) NSString *companyCity;
+@property (strong, nonatomic) NSString *cell;
+@property (strong, nonatomic) NSString *email;
 @property (strong, nonatomic) NSArray *visitDates;
 @property (strong, nonatomic) NSString *eyed;
 

@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Controller.h"
+#import "LabMemberViewController.h"
 
 @interface ConfirmInfoViewController : UIViewController
 

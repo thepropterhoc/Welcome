@@ -29,7 +29,7 @@
 {
   [[Controller sharedInstance] setNewVisitorFirstName:self.firstNameField.text];
   [[Controller sharedInstance] setNewVisitorLastName:self.lastNameField.text];
-  [self performSegueWithIdentifier:@"pushToCompany" sender:self];
+  [self performSegueWithIdentifier:@"pushToCell" sender:self];
 }
 
 - (IBAction)cancel:(id)sender

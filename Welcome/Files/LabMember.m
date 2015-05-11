@@ -26,6 +26,15 @@
   return l;
 }
 
++(instancetype)labMemberWithFirstName:(NSString *)firstName lastName:(NSString *)lastName contactNumber:(NSString *)contactNumber
+{
+  LabMember *l = [[LabMember alloc] init];
+  l.firstName = firstName;
+  l.lastName = lastName;
+  l.contactNumber = contactNumber;
+  return l;
+}
+
 -(NSDictionary *) dictionaryRepresentation
 {
   NSMutableDictionary *d = [[NSMutableDictionary alloc] init];
@@ -36,6 +45,11 @@
   d[@"eyed"] = self.eyed;
   
   return d;
+}
+
+-(NSString*) stringRepresentation
+{
+  return [NSString stringWithFormat:@"%@ %@ : %@", self.firstName, self.lastName, self.contactNumber];
 }
 
 @end

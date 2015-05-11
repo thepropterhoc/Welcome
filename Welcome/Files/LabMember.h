@@ -16,6 +16,8 @@
 @property (strong, nonatomic) NSString *eyed;
 
 +(instancetype)labMemberFromDictionary:(NSDictionary*)d;
++(instancetype)labMemberWithFirstName:(NSString*)firstName lastName:(NSString*)lastName contactNumber:(NSString*)contactNumber;
 -(NSDictionary *) dictionaryRepresentation;
+-(NSString*) stringRepresentation;
 
 @end
